@@ -1,0 +1,5 @@
+1. git status (list out file changed)
+2. git add tenfile (them file changed to be committed)
+3. git status (check color -> should be green)
+4. git commit -m "nhap message here"
+5. git push --set-upstream origin tennhanh (day code len repository)

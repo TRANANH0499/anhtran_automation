@@ -7,7 +7,7 @@ def read_csv_data(file_path):
         reader = csv.DictReader(file)
         return [row['keyword'] for row in reader]
 
-test_data = read_csv_data('./data/data_test.csv')
+test_data = read_csv_data('automation_framework/data/data_test.csv')
 
 @pytest.mark.parametrize("keyword", test_data)
 def test_google_search(keyword):

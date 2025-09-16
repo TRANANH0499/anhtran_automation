@@ -1,9 +1,11 @@
 import pytest
 from selenium.webdriver.common.by import By
-from pages.login_page import LoginPage
+from automation_framework.pages.login_page import LoginPage
 from time import sleep
 from selenium import webdriver
-class DashboardPage():
+from base.base_page import BasePage
+
+class DashboardPage(BasePage):
     DASHBOARD = (By.XPATH,"//h6[text()='Dashboard']")
     
     def __init__(self, driver):

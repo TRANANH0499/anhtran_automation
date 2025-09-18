@@ -1,7 +1,7 @@
 import pytest
-from automation_framework.pages.login_page import LoginPage
-from automation_framework.pages.recruitment_page import RecruitmentPage
-from automation_framework.base.base_test import BaseTest
+from pages.login_page import LoginPage
+from pages.recruitment_page import RecruitmentPage
+from base.base_test import BaseTest
 
 @pytest.mark.usefixtures("setup")
 class TestVacancies(BaseTest):

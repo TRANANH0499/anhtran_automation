@@ -25,6 +25,9 @@ class LoginPage(BasePage):
         self.enter_password(password)
         self.click_login()
 
+    def select_role(self):
+        dropdown = self.get_element("//select[@name='role']")
+        
 
 
 

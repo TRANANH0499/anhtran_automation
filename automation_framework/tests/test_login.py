@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 class TestLogin(BaseTest):
-    
+    @pytest.mark.smoke
     def test_log(self):
         loginpage = LoginPage(self.driver)
         loginpage.login("Admin", "admin123")
